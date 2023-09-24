@@ -9,18 +9,28 @@
 /* Begin PBXBuildFile section */
 		EDC5F08D2ABBA6720087667F /* Yubi3App.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC5F08C2ABBA6720087667F /* Yubi3App.swift */; };
 		EDC5F08F2ABBA6720087667F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC5F08E2ABBA6720087667F /* ContentView.swift */; };
-		EDC5F0912ABBA6720087667F /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC5F0902ABBA6720087667F /* Item.swift */; };
 		EDC5F0932ABBA6730087667F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDC5F0922ABBA6730087667F /* Assets.xcassets */; };
 		EDC5F0962ABBA6730087667F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDC5F0952ABBA6730087667F /* Preview Assets.xcassets */; };
+		EDE55F4F2ABBA723003935FA /* YubiKit in Frameworks */ = {isa = PBXBuildFile; productRef = EDE55F4E2ABBA723003935FA /* YubiKit */; };
+		EDE55F542ABBAE08003935FA /* SmartCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE55F532ABBAE08003935FA /* SmartCard.swift */; };
+		EDE55F562ABBBDFD003935FA /* Data+.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE55F552ABBBDFD003935FA /* Data+.swift */; };
+		EDE55F582ABBC366003935FA /* SecKey+.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE55F572ABBC366003935FA /* SecKey+.swift */; };
+		EDE55F5A2ABBEBFA003935FA /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE55F592ABBEBFA003935FA /* Status.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EDC5F0892ABBA6720087667F /* Yubi3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yubi3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDC5F08C2ABBA6720087667F /* Yubi3App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yubi3App.swift; sourceTree = "<group>"; };
 		EDC5F08E2ABBA6720087667F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		EDC5F0902ABBA6720087667F /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		EDC5F0922ABBA6730087667F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EDC5F0952ABBA6730087667F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EDE55F502ABBA77E003935FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		EDE55F512ABBA7F2003935FA /* Yubi3-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Yubi3-Bridging-Header.h"; sourceTree = "<group>"; };
+		EDE55F522ABBA8DC003935FA /* Yubi3.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Yubi3.entitlements; sourceTree = "<group>"; };
+		EDE55F532ABBAE08003935FA /* SmartCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartCard.swift; sourceTree = "<group>"; };
+		EDE55F552ABBBDFD003935FA /* Data+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+.swift"; sourceTree = "<group>"; };
+		EDE55F572ABBC366003935FA /* SecKey+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SecKey+.swift"; sourceTree = "<group>"; };
+		EDE55F592ABBEBFA003935FA /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDE55F4F2ABBA723003935FA /* YubiKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,11 +64,17 @@
 		EDC5F08B2ABBA6720087667F /* Yubi3 */ = {
 			isa = PBXGroup;
 			children = (
+				EDE55F502ABBA77E003935FA /* Info.plist */,
 				EDC5F08C2ABBA6720087667F /* Yubi3App.swift */,
 				EDC5F08E2ABBA6720087667F /* ContentView.swift */,
-				EDC5F0902ABBA6720087667F /* Item.swift */,
 				EDC5F0922ABBA6730087667F /* Assets.xcassets */,
 				EDC5F0942ABBA6730087667F /* Preview Content */,
+				EDE55F512ABBA7F2003935FA /* Yubi3-Bridging-Header.h */,
+				EDE55F522ABBA8DC003935FA /* Yubi3.entitlements */,
+				EDE55F532ABBAE08003935FA /* SmartCard.swift */,
+				EDE55F552ABBBDFD003935FA /* Data+.swift */,
+				EDE55F572ABBC366003935FA /* SecKey+.swift */,
+				EDE55F592ABBEBFA003935FA /* Status.swift */,
 			);
 			path = Yubi3;
 			sourceTree = "<group>";
@@ -86,6 +103,9 @@
 			dependencies = (
 			);
 			name = Yubi3;
+			packageProductDependencies = (
+				EDE55F4E2ABBA723003935FA /* YubiKit */,
+			);
 			productName = Yubi3;
 			productReference = EDC5F0892ABBA6720087667F /* Yubi3.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +134,9 @@
 				Base,
 			);
 			mainGroup = EDC5F0802ABBA6720087667F;
+			packageReferences = (
+				EDE55F4D2ABBA723003935FA /* XCRemoteSwiftPackageReference "yubikit-ios" */,
+			);
 			productRefGroup = EDC5F08A2ABBA6720087667F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -141,8 +164,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDC5F08F2ABBA6720087667F /* ContentView.swift in Sources */,
-				EDC5F0912ABBA6720087667F /* Item.swift in Sources */,
+				EDE55F542ABBAE08003935FA /* SmartCard.swift in Sources */,
 				EDC5F08D2ABBA6720087667F /* Yubi3App.swift in Sources */,
+				EDE55F582ABBC366003935FA /* SecKey+.swift in Sources */,
+				EDE55F562ABBBDFD003935FA /* Data+.swift in Sources */,
+				EDE55F5A2ABBEBFA003935FA /* Status.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,12 +299,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Yubi3/Yubi3.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Yubi3/Preview Content\"";
 				DEVELOPMENT_TEAM = K78G42H4U2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Yubi3/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -292,6 +320,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.joeblau.Yubi3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Yubi3/Yubi3-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -302,12 +331,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Yubi3/Yubi3.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Yubi3/Preview Content\"";
 				DEVELOPMENT_TEAM = K78G42H4U2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Yubi3/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -321,6 +352,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.joeblau.Yubi3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Yubi3/Yubi3-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -348,6 +380,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EDE55F4D2ABBA723003935FA /* XCRemoteSwiftPackageReference "yubikit-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Yubico/yubikit-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EDE55F4E2ABBA723003935FA /* YubiKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EDE55F4D2ABBA723003935FA /* XCRemoteSwiftPackageReference "yubikit-ios" */;
+			productName = YubiKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EDC5F0812ABBA6720087667F /* Project object */;
 }
